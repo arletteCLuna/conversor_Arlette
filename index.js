@@ -1,6 +1,17 @@
+/* *
+ * This sample demonstrates handling intents from an Alexa skill using the Alexa Skills Kit SDK (v2).
+ * Please visit https://alexa.design/cookbook for additional examples on implementing slots, dialog management,
+ * session persistence, api calls, and more.
+ * */
 const Alexa = require('ask-sdk-core');
+
+// i18n dependencies. i18n is the main module, sprintf allows us to include variables with '%s'.
 const i18n = require('i18next');
 const sprintf = require('i18next-sprintf-postprocessor');
+
+// We create a language strings object containing all of our strings. 
+// The keys for each string will then be referenced in our code
+// e.g. requestAttributes.t('WELCOME')
 
 const languageStrings = {
     'es': {
